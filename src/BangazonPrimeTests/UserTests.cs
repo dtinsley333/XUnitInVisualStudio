@@ -36,7 +36,7 @@ namespace BangazonPrimeTests
         [Fact]
         public void UserIsNotBangazonPrimeUser()
         {
-            //End Date in the past means no Bangazon prime membership, the user cancelled it on the end data
+            //End Date in the past means no Bangazon prime membership, the user cancelled it on the end date
             User bangazonUser = new User(DateTime.Now.AddMonths(-11), DateTime.Now.AddMonths(-1), 344); 
             bool actual = bangazonUser.IsPrimeUser;
             Assert.Equal(false, actual);
@@ -45,7 +45,7 @@ namespace BangazonPrimeTests
         [Fact]
         public void UserPhoneNumberisFormattedCorrectly()
         {
-            //Format the phone number to a common format
+            //Format the phone number to a common format better suited for display
             var user = new User();
             string phoneNum = "3143334089";
             string result = user.FormatPhoneNumber(phoneNum);
@@ -54,7 +54,7 @@ namespace BangazonPrimeTests
         [Fact]
         public void SubtractionFailingTest()
         {
-            //This test is broken so you can see how a failed test looks and how to troubleshoot.
+            //This test is broken so you can see how a failed test looks and how to troubleshoot. Fix it. 
             var user = new User();
             var result = user.Subtract(5, 4);
             Assert.Equal(111, result);
