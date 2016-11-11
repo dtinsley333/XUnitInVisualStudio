@@ -1,9 +1,9 @@
-# XUnitInVisualStudio
+# XUnit In Visual Studio
 Very simple xunit testing example. There are several tests a few are purposely failing. Fix them as a way to understand how to build 
 and modify tests. 
 
 
-##Prerequistes 
+##Prerequisites
 Will you need Visual Studio 2015 with the .NET SDK installed
 
 ##Steps To Run
